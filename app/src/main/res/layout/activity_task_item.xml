@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dip"
+    android:background="@drawable/drop_button2"
+    android:paddingVertical="20dip"
+    android:layout_marginBottom="15dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:paddingRight="10dip"
+            >
+            <TextView
+                android:id="@+id/task_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Task1"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/wtg_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="WTG1"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/task_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Task1"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/task_number_workers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="WTG1"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dip">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/task_comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="adasdfsadfsadf"
+                android:textColor="@android:color/black"
+                android:maxLength="25"
+
+                />
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dip">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+
+            <CheckBox
+                android:id="@+id/task_shift_option"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+
+                android:text="Day Shift"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_task_open"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="2"
+            android:background="@drawable/rounded_blue_button"
+            android:text="Open"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>

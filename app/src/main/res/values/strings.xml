@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">GalernaWind</string>
+    <string name="sub_app_name">THE WIND SOFTWARE</string>
+    <string name="apiURL">https://galernawindsoftware.com/api/</string>
+
+
+    <string name="initial_button_title">Let us start</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Validate</string>
+    <string name="log_in">Login</string>
+
+    <string name="data_btn">Data</string>
+    <string name="data_ots1">OTs 1</string>
+    <string name="data_ots2">OTs 2</string>
+    <string name="data_ots3">OTs 3</string>
+
+    <string name="title_manpower">ManPower</string>
+    <string name="title_cranes">Cranes</string>
+
+    <string name="btn_daily_status">Daily Status</string>
+    <string name="btn_personnel">Personnel</string>
+    <string name="btn_inefficiencies">Inefficiencies</string>
+    <string name="btn_resource_activation">Resource Activation</string>
+    <string name="btn_crane_relocations">Crane Recolocations</string>
+    <string name="logout">Logout</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_data">DataActivity</string>
+    <string name="title_activity_personal">PersonalActivity</string>
+    <string name="title_activity_resource_activation">ResourceActivationActivity</string>
+    <string name="title_activity_crane_recolocation">CraneRecolocationActivity</string>
+    <string name="title_dailyStatusActivity">Daily Status Activity</string>
+    <string name="title_taskListActivity">Task List Activity</string>
+    <string name="title_cranedailyStatusActivity">Crane Daily Status Activity</string>
+    <string name="title_cranetaskListActivity">Crane Task List Activity</string>
+    <string name="title_InefficienciesActivity">Inefficiencies Activity</string>
+    <string name="title_InefficienciesTaskListActivity">Inefficiencies Task ListActivity</string>
+    <string name="title_craneInefficienciesActivity">Crane Inefficiencies Activity</string>
+    <string name="title_craneInefficienciesTaskListActivity">Crane Inefficiencies Task ListActivity</string>
+    <string-array name="responsible_array">
+        <item>Assembly weather</item>
+        <item>SiemensGamesa</item>
+        <item>Crane Subcontractor</item>
+        <item>Customer</item>
+        <item>Assembly Subcontract</item>
+        <item>Pending</item>
+    </string-array>
+    <string-array name="validated_array">
+        <item>YES</item>
+        <item>PENDING</item>
+        <item>NO</item>
+        <item>Partial Disagreement</item>
+    </string-array>
+    <string-array name="cause_array">
+        <item>PARALIZATION</item>
+        <item>ADMINISTRATION</item>
+        <item>QUALITY</item>
+        <item>SENS</item>
+        <item>PENDING</item>
+    </string-array>
+    <string-array name="subcause_ADMINISTRATION">
+        <item>Exwork Pendings</item>
+        <item>Client Concessions</item>
+    </string-array>
+    <string-array name="subcause_PARALIZATION">
+        <item>WEATHER</item>
+        <item>CUSTOMER</item>
+        <item>PLANT</item>
+        <item>BOP</item>
+        <item>LOGISTIC</item>
+        <item>CRANES</item>
+        <item>Assembly Subcontract</item>
+    </string-array>
+    <string-array name="subcause_QUALITY">
+        <item>CO DESIGN</item>
+        <item>CO LOGISTIC</item>
+        <item>CO CLIENT</item>
+        <item>CO BOP</item>
+        <item>CO SECTION PLANT</item>
+        <item>CO NACELLE PLANT</item>
+        <item>CO BLADE PLANT</item>
+        <item>CO MANPOWER</item>
+        <item>CO CRANES</item>
+        <item>CO SQA</item>
+        <item>CO SPECIFIC #1</item>
+        <item>CO SPECIFIC #2</item>
+        <item>CO SPECIFIC #3</item>
+        <item>CO SPECIFIC #4</item>
+        <item>CO SPECIFIC #5</item>
+        <item>CO SPECIFIC #6</item>
+        <item>CO SPECIFIC #7</item>
+        <item>CO SPECIFIC #8</item>
+        <item>CO SPECIFIC #9</item>
+        <item>CO SPECIFIC #10</item>
+    </string-array>
+    <string-array name="subcause_SENSE">
+        <item>Pestaña OT C68</item>
+        <item>Pestaña OT C69</item>
+        <item>Pestaña OT C70</item>
+        <item>Pestaña OT C71</item>
+        <item>Pestaña OT C72</item>
+        <item>Pestaña OT C73</item>
+        <item>Pestaña OT C74</item>
+        <item>Pestaña OT C75</item>
+        <item>Pestaña OT C76</item>
+        <item>Pestaña OT C77</item>
+        <item>Pestaña OT C78</item>
+        <item>Pestaña OT C79</item>
+        <item>Pestaña OT C80</item>
+        <item>Pestaña OT C81</item>
+    </string-array>
+</resources>

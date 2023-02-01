@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/drawable/drop_button.xml" value="0.22135416666666666" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/drawable/drop_button2.xml" value="0.23177083333333334" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/drawable/roundedbutton.xml" value="0.22135416666666666" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/drawable/transparentborder.xml" value="0.22135416666666666" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_crane_daily_status.xml" value="0.36666666666666664" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_crane_inefficiencies.xml" value="0.20520833333333333" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_crane_inefficiencies_list.xml" value="0.20520833333333333" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_crane_list.xml" value="0.3188405797101449" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_crane_list_item.xml" value="0.3188405797101449" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_crane_recolocation.xml" value="0.3070652173913043" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_crane_task_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_crane_trazability.xml" value="0.20520833333333333" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_crane_trazability_list.xml" value="0.20520833333333333" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_daily_status.xml" value="0.33" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_daily_status_item.xml" value="0.20520833333333333" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_dashboard.xml" value="0.20520833333333333" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_data.xml" value="0.33" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_data_list.xml" value="0.3188405797101449" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_data_list_item.xml" value="0.3188405797101449" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_inefficiencies.xml" value="0.33" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_inefficiencies_item.xml" value="0.215625" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_inefficiencies_list.xml" value="0.215625" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_login.xml" value="0.20520833333333333" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_ots1_data.xml" value="0.32608695652173914" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_personal.xml" value="0.25" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_resource_activation.xml" value="0.3070652173913043" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_task_item.xml" value="0.33" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_task_list.xml" value="0.33" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_trazability.xml" value="0.4497716894977169" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_trazability_item.xml" value="0.28306159420289856" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_trazability_list.xml" value="0.28306159420289856" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_wtg_item.xml" value="0.3188405797101449" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/activity_wtg_list.xml" value="0.3188405797101449" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/layout/resource_activation.xml" value="0.33" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
+        <entry key="..\:/pgr/projects/pro/MarcoP/App/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3828125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Code maturityJava</id>
+          </State>
+          <State>
+            <id>JUnitJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java 5Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 7Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 8Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>JavadocJava</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+          <State>
+            <id>PerformanceJava</id>
+          </State>
+          <State>
+            <id>TestNGJava</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
+</project>

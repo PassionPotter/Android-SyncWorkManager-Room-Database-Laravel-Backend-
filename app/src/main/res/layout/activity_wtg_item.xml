@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dip"
+    android:background="@drawable/drop_button2"
+    android:paddingVertical="20dip"
+    android:layout_marginBottom="15dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:paddingRight="10dip"
+            >
+            <TextView
+                android:id="@+id/wtg_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Task1"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/wtg_item_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="WTG1"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/wtg_item_assembly_secuence"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Task1"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dip">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+
+            <CheckBox
+                android:id="@+id/wtg_item_nacelle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+
+                android:text="Nacelle Beacon"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+
+            <CheckBox
+                android:id="@+id/wtg_item_tower"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:text="Tower Beacon"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

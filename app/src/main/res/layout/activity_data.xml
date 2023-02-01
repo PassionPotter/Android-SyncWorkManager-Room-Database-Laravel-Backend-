@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context="com.androidigniter.excelapp.data.DataActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dip">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/data_btn"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/data_text_project_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Project Code"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/data_input_project_code"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/data_text_windfarm_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Windfarm Name"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/data_input_windfarm_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/data_text_country"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Country"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/data_edit_country"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/data_text_customer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Customer"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/data_input_customer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/data_text_wtg_power"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="WTG Power (MW)"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/data_input_wtg_power"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/data_select_crane_company"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Crane Company"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <com.androidigniter.excelapp.components.MultiSpinner
+                            android:id="@+id/data_spinner_crane_company"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/data_text_assembly_subcontractor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Assembly Subcontractor"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <com.androidigniter.excelapp.components.MultiSpinner
+                            android:id="@+id/data_spinner_assembly_subcontractor"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/data_text_n_wtgs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" N\u00BA WTGs"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <Spinner
+                            android:id="@+id/data_input_n_wtgs"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                             />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/data_text_wtg_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="WTG Type"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <com.androidigniter.excelapp.components.MultiSpinner
+                            android:id="@+id/data_spinner_wtg_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/data_text_blade_length"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Blade Length"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/data_input_blade_length"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/data_text_blade_manufacture"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" Blade Manufacture"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/data_input_blade_manufacture"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/data_text_tower_height"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tower Height"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/data_input_tower_height"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/data_text_tower_sections"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" N\u00BA Tower Sections"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/data_input_tower_sections"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/data_text_preassembly_sections"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pre-assembly sections"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/data_input_preassembly_sections"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/data_text_wtg_special_nacelle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" N\u00BA WTG Special Nacelle Beacon"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/data_input_wtg_special_nacelle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/data_text_wtg_special_tower"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" N\u00BA WTG Special Tower Beacon"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/data_input_wtg_special_tower"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dip"
+                    >
+                <Button
+                    android:id="@+id/btn_data_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_blue_button"
+                    android:text="List"
+                    android:textColor="#FFFFFF" />
+                    <Space
+                        android:layout_width="30dip"
+                        android:layout_height="match_parent"/>
+                    <Button
+                        android:id="@+id/btn_data_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_blue_button"
+                        android:text="Save"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Crane Data"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/crane_text_resource"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Resource"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/crane_input_resource"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/crane_text_crane_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Crane Type"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/crane_input_crane_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/crane_text_mob_demob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mob/Demob"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/crane_edit_mob_demob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/crane_text_arrival_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Arrival Date"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/crane_input_arrival_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="date"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/crane_text_ready"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ready"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/crane_input_ready"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/crane_text_demob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Demob"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/crane_edit_demob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dip"
+                    >
+                <Button
+                    android:id="@+id/btn_crane_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_blue_button"
+                    android:text="List"
+                    android:textColor="#FFFFFF" />
+                    <Space
+                        android:layout_width="30dip"
+                        android:layout_height="match_parent"/>
+                <Button
+                    android:id="@+id/btn_crane_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_blue_button"
+                    android:text="Save"
+                    android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WTG Data"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/wtg_text_wtg_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="WTG Name"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/wtg_input_wtg_name"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/wtg_text_wtg_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="WTG Type"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <Spinner
+                            android:id="@+id/wtg_input_wtg_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/wtg_text_assembly_secuence"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Assembly Secuence"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/wtg_edit_assembly_secuence"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="numberDecimal" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/wtg_switch_special_nacelle_beacon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="1"
+                        android:text="Special nacelle beacon"
+                        android:textColor="@color/colorPrimary" />
+
+                    <Switch
+                        android:id="@+id/wtg_switch_special_tower_beacon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Special Tower beacon"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dip"
+                    >
+                <Button
+                    android:id="@+id/btn_wtg_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_blue_button"
+                    android:text="List"
+                    android:textColor="#FFFFFF" />
+                    <Space
+                        android:layout_width="30dip"
+                        android:layout_height="match_parent"/>
+                <Button
+                    android:id="@+id/btn_wtg_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_blue_button"
+                    android:text="Save"
+                    android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
